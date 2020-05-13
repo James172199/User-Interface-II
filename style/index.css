@@ -155,15 +155,17 @@ footer {
   background-color: gray;
 }
 
-img {
+section {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: row;
-  padding: 20px;
-  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-row {
-  width: 100%;
+#p1 {
+  color: yellow;
+}
+
+input {
+  color: green;
 }
