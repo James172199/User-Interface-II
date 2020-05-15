@@ -126,10 +126,27 @@ li {
   display: inline;
 }
 
-.nav {
+.navhome {
   padding: 20px;
   margin: 25px;
   text-align: center;
+}
+
+li:hover {
+  background-color: gray;
+  color: red;
+  animation-name: homehover;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes homehover {
+  from {
+    background-color: gray;
+  }
+  to {
+    background-color: black;
+  }
 }
 
 h1 {
@@ -155,17 +172,52 @@ footer {
   background-color: gray;
 }
 
-section {
+.homesection {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-#p1 {
+#p1,
+#p2,
+#p3,
+#p4 {
   color: yellow;
 }
 
 input {
-  color: green;
+  color: red;
+}
+
+.projectsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  width: 5%;
+  height: 2.5%;
+  background-color: gray;
+  padding: 2%;
+  text-align: center;
+  border-radius: 5px;
+  color: red;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  cursor: pointer;
+  background-color: yellow;
+  color: red;
+  border-radius: 5px;
 }
